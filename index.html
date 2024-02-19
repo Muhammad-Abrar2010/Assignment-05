@@ -2,7 +2,8 @@
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -139,7 +140,7 @@
               </div>
               <div class="flex">
                 <img src="images/seat-green.png" alt="" />
-                <h1><span>8</span> Seats Left</h1>
+                <h1><span id="number">8</span> Seats Left</h1>
               </div>
             </div>
             <div>
@@ -173,13 +174,36 @@
             <h1 class="text-xl font-normal border-b-2 border-green-500">
               Select Your Seat
             </h1>
-            <div class="flex justify-between"><div class="flex"><img src="images/seat-gray.png" alt="">Available</div>
-          <div class="flex"><img src="images/seat-green-filled.png" alt="">Selected</div></div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <img src="images/seat-gray.png" alt="" />Available
+              </div>
+              <div class="flex">
+                <img src="images/seat-green-filled.png" alt="" />Selected
+              </div>
+            </div>
           </div>
 
-          <div>
-            <button class="bg-[#e5e6e7] rounded-md inset-y-0 right-0"><img src="images/drivingWheel.png" alt=""></button>
-            
+          <div class="flex flex-row-reverse">
+            <button class="bg-[#e5e6e7] rounded-md">
+              <img src="images/drivingWheel.png" alt="" />
+            </button>
+          </div>
+          <div class="flex flex-col gap-8">
+            <div class="flex gap-4">
+              <button class="btn btn-ghost hover:bg-white">B</button>
+              <button class="btn Choice">A1</button>
+              <button class="btn Choice">A2</button>
+              <button class="btn Choice">A3</button>
+              <button class="btn Choice">A4</button>
+            </div>
+            <div class="flex gap-4">
+              <button class="btn btn-ghost hover:bg-white">A</button>
+              <button class="btn Choice">B1</button>
+              <button class="btn Choice">B2</button>
+              <button class="btn Choice">B3</button>
+              <button class="btn Choice">B4</button>
+            </div>
           </div>
         </div>
       </div>
@@ -190,5 +214,8 @@
       src="https://kit.fontawesome.com/71bf91a271.js"
       crossorigin="anonymous"
     ></script>
+    <script src="javascrpt/index.js"></script>
   </body>
 </html>
+
+
