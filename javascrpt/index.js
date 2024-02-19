@@ -71,4 +71,11 @@ function coupon() {
 
       couponBox.classList.add("hidden");
     }
+
+    if (couponInput.value === "0" ) {
+      grandTotal.innerText =
+        parseInt(totalMoney.innerText)
+
+      couponBox.classList.add("hidden");
+    }  
 }
