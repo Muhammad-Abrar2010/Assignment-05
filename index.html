@@ -2,8 +2,8 @@
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -156,7 +156,7 @@
                 <h1>Route</h1>
                 <p>Dhaka - Sylhet</p>
               </div>
-              <div class="flex justify-around">
+              <div class="flex justify-around gap-4">
                 <h1>Boarding Point - Laxmipur</h1>
                 <h1>Dropping Point - Bogura</h1>
                 <h1>Est. Time - 11 Hour</h1>
@@ -183,26 +183,64 @@
               </div>
             </div>
           </div>
+          <div></div>
 
-          <div class="flex flex-row-reverse">
-            <button class="bg-[#e5e6e7] rounded-md">
-              <img src="images/drivingWheel.png" alt="" />
-            </button>
-          </div>
-          <div class="flex flex-col gap-8">
-            <div class="flex gap-4">
-              <button class="btn btn-ghost hover:bg-white">B</button>
-              <button class="btn Choice">A1</button>
-              <button class="btn Choice">A2</button>
-              <button class="btn Choice">A3</button>
-              <button class="btn Choice">A4</button>
+          <div class="flex justify-between p-6">
+            <div class="flex flex-col gap-8">
+              <div class="flex flex-row-reverse">
+                <button class="bg-[#e5e6e7] rounded-md">
+                  <img src="images/drivingWheel.png" alt="" />
+                </button>
+              </div>
+
+              <div class="flex gap-4">
+                <button class="btn btn-ghost hover:bg-white">B</button>
+                <button class="btn Choice">A1</button>
+                <button class="btn Choice">A2</button>
+                <button class="btn Choice">A3</button>
+                <button class="btn Choice">A4</button>
+              </div>
+              <div class="flex gap-4">
+                <button class="btn btn-ghost hover:bg-white">A</button>
+                <button class="btn Choice">B1</button>
+                <button class="btn Choice">B2</button>
+                <button class="btn Choice">B3</button>
+                <button class="btn Choice">B4</button>
+              </div>
             </div>
-            <div class="flex gap-4">
-              <button class="btn btn-ghost hover:bg-white">A</button>
-              <button class="btn Choice">B1</button>
-              <button class="btn Choice">B2</button>
-              <button class="btn Choice">B3</button>
-              <button class="btn Choice">B4</button>
+            <div>
+              <div class="border-dotted border-b-4 border-gray-600">
+                <h1>Select Your Seat</h1>
+              </div>
+              <div
+                id="box"
+                class="font-inter font-semibold my-4 bg-gray-300 rounded p-2"
+              >
+                <div class="flex justify-between gap-6">
+                  <h1>
+                    Seats
+                    <span
+                      id="seat-number"
+                      class="bg-green-900 rounded p-2 text-white"
+                      >0</span
+                    >
+                  </h1>
+                  <h1>class</h1>
+                  <h1>price</h1>
+                </div>
+              </div>
+              <div
+                class="font-inter font-semibold my-4 bg-gray-300 rounded p-2"
+              >
+                <div class="flex justify-around">
+                  <div><h1>Total</h1></div>
+                  
+                  <div class="flex justify-center">
+                    <h1 id="totalMoney">0</h1>
+                    <h1 class="hover:bg-white">TK</h1>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -217,5 +255,3 @@
     <script src="javascrpt/index.js"></script>
   </body>
 </html>
-
-
